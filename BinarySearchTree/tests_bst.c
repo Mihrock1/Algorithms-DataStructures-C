@@ -21,6 +21,7 @@ int main() {
         insert_node(&root, value, NULL);
     }
 
+    // Traverse test
     // Print the BST in order
     printf("BST In-Order Traversal: ");
     print_in_order(root);
@@ -60,5 +61,22 @@ int main() {
         }
 
         printf("\n");
+    }
+
+    // Delete test
+    int data;
+    printf("Enter the node to delete: ");
+    scanf("%d", &data);
+
+    const int result = delete_node(root, data);
+
+    if(result == -1) {
+        printf("Couldn't delete as the node %d doesn't exist in the input tree", data);
+    }
+    else {
+        printf("Successfully delete node %d from input tree\n", data);
+        // Print the BST in order
+        printf("BST In-Order Traversal: ");
+        print_in_order(root);
     }
 }

@@ -10,8 +10,10 @@ typedef struct Node {
 
 void print_in_order(Node *root);
 
-void insert_node(Node **l, const int data, Node *parent);
+void insert_node(Node **l, int data, Node *parent);
 
 Node *search_node(Node *root, int data);
+
+int delete_node(Node *root, int data);
 
 #endif

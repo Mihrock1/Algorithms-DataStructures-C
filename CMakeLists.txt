@@ -12,7 +12,8 @@ set(BST ${CMAKE_SOURCE_DIR}/BinarySearchTree)
 #set(SRC2_DIR ${CMAKE_SOURCE_DIR}/src2)
 
 # Add an executable with the source files
-add_executable(tests_bst ${BST}/tests_bst.c ${BST}/bst.c ${BST}/insert_bst.c ${BST}/search_bst.c)
+add_executable(tests_bst ${BST}/tests_bst.c ${BST}/traverse_bst.c ${BST}/insert_bst.c
+        ${BST}/search_bst.c ${BST}/delete_bst.c)
 # Specify the output directory for the executable
 set_target_properties(tests_bst PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/builds)

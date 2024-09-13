@@ -1,7 +1,7 @@
 #include "bst.h"
 #include <stdio.h>
 
-Node *search_node(Node *root, int data) {
+Node *search_node(Node *root, const int data) {
     if (root == NULL) {
         return NULL;
     }
