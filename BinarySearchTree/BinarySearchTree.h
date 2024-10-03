@@ -16,4 +16,8 @@ Node *search_node(Node *root, int data);
 
 int delete_node(Node *root, int data);
 
+int *capture_in_order(Node *root, int *size);
+
+void free_tree(Node *root);
+
 #endif
